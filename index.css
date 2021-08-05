@@ -1,0 +1,172 @@
+/* Global */
+
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto-Regular.ttf),
+    url(fonts/Roboto-Medium.ttf),
+    url(fonts/Roboto-Bold.ttf);
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+}
+
+/* App Bar */
+
+.app-bar {
+    display: flex;
+    background-color: #1e2833;
+    height: 120px;
+    flex-direction: row;
+}
+
+.chic-secret-title {
+    color: white;
+    margin-left: 60px;
+    align-self: center;
+}
+
+.app-bar-navigation {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin-left: 120px;
+}
+
+.app-bar-navigation-item {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin-right: 80px;
+}
+
+.app-bar-navigation-item-icon {
+    align-self: center;
+    height: 24px;
+    width: 24px;
+}
+
+.app-bar-navigation-item-title {
+    align-self: center;
+    margin-left: 10px;
+}
+
+/* Body */
+
+/* Section */
+
+.section {
+    display: flex;
+    flex-direction: row;
+    padding: 40px 300px;
+}
+
+.section-dark {
+    background-color: #1e2833;
+    color: white;
+}
+
+.section-text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.section-title {
+    font-size: 40px;
+}
+
+.section-description {
+    color: #828282;
+}
+
+.section-dark .section-description {
+    color: #9aa1ac;
+}
+
+.section-image {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.section-image-left {
+    justify-content: start;
+}
+
+.section-buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+}
+
+/* Button */
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: min-content;
+    padding: 8px 16px;
+    margin-right: 20px;
+    border-radius: 18px;
+    background-color: #1e2833;
+    color: white;
+    font-size: 14px;
+}
+
+.button-text {
+    align-self: center;
+    margin-left: 10px;
+}
+
+.button-icon {
+    align-self: center;
+    height: 24px;
+    width: 24px;
+}
+
+.button-light {
+    background-color: white;
+    color: #1e2833;
+}
+
+.button-disabled {
+    background-color: #e3e3e3;
+    color: #393939;
+}
+
+/* Section Password Manager */
+
+.chic-secret-image {
+    height: 350px;
+}
+
+/* Section Open Source */
+
+.open-source-image {
+    height: 330px;
+}
+
+/* Section Desktop Application */
+
+.desktop-image {
+    height: 400px;
+}
+
+/* Section Smartphone */
+
+.section-text-smartphone {
+    align-self: center;
+}
+
+.smartphone-image {
+    height: 600px;
+}
