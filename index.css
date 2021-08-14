@@ -73,6 +73,24 @@ body {
     padding: 40px 300px;
 }
 
+@media screen and (min-width: 1900px) {
+    .section {
+        padding: 40px 400px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .section {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .section {
+        padding: 40px 100px;
+    }
+}
+
 .section-dark {
     background-color: #1e2833;
     color: white;
@@ -108,10 +126,16 @@ body {
     justify-content: start;
 }
 
+@media screen and (max-width: 1400px) {
+    .section-image-left {
+        justify-content: center;
+    }
+}
+
 .section-buttons {
     display: flex;
     flex-direction: row;
-    margin-top: 16px;
+    margin-top: 24px;
 }
 
 /* Button */
@@ -162,16 +186,40 @@ body {
     height: 350px;
 }
 
+@media screen and (max-width: 1000px) {
+    .chic-secret-image {
+        margin-top: 40px;
+    }
+}
+
 /* Section Open Source */
+
+.open-source-section {
+    align-items: center;
+}
 
 .open-source-image {
     height: 330px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    .open-source-image {
+        margin-bottom: 40px;
+    }
 }
 
 /* Section Desktop Application */
 
 .desktop-image {
     height: 400px;
+}
+
+@media screen and (max-width: 1000px) {
+    .desktop-image {
+        margin-top: 40px;
+    }
 }
 
 /* Section Smartphone */
@@ -182,4 +230,52 @@ body {
 
 .smartphone-image {
     height: 600px;
+}
+
+@media screen and (max-width: 1000px) {
+    .smartphone-image {
+        margin-bottom: 40px;
+    }
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 100px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-github {
+    display: flex;
+    flex-direction: row;
+    color: black;
+    margin-right: 80px;
+    text-decoration: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.footer-github-icon {
+    align-self: center;
+    height: 30px;
+    width: 30px;
+}
+
+.footer-github-title {
+    align-self: center;
+    margin-left: 10px;
+    font-size: 24px;
+    font-weight: bolder;
 }
