@@ -29,7 +29,7 @@ body {
     font-weight: normal;
 }
 
-.download-button {
+.button {
     height: 40px;
     width: fit-content;
     padding-left: 24px;
@@ -42,12 +42,42 @@ body {
     text-decoration: none;
 }
 
-.download-button:hover {
+.button:hover {
     background-color: rgba(11, 132, 255, 0.7);
 }
 
-.download-button:active {
+.button:active {
     background-color: rgba(11, 132, 255, 0.5);
+}
+
+.feature-button {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(11, 132, 255, 0.1);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-button-text {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 8px;
+    text-align: center;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.feature-button-image path {
+    fill: #000000;
+    fill-opacity: 70%;
 }
 
 .download-button-text {
@@ -76,6 +106,14 @@ body {
     margin-top: 16px;
     font-size: 28px;
     font-weight: 500;
+}
+
+.content {
+    width: 1400px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-content: center;
 }
 
 .app-bar-content {
@@ -110,4 +148,27 @@ body {
     display: flex;
     flex-direction: row;
     gap: 8px;
+}
+
+.features-buttons-container {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    justify-content: center;
+}
+
+.feature-title {
+    text-align: center;
+    font-size: 34px;
+    font-weight: normal;
+    margin-top: 48px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.feature-image {
+    width: 1280px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
