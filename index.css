@@ -23,8 +23,20 @@ body {
     font-weight: bold;
 }
 
+.title-dark {
+    color: #000000;
+    font-size: 48px;
+    font-weight: bold;
+}
+
 .body1 {
     color: white;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.body1-dark {
+    color: #000000;
     font-size: 16px;
     font-weight: normal;
 }
@@ -171,4 +183,60 @@ body {
     width: 1280px;
     margin-left: 100px;
     margin-right: 100px;
+    margin-top: 32px;
+}
+
+.open-source-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    margin-top: 48px;
+}
+
+.open-source-left {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-left: 50px;
+    margin-right: 40px;
+}
+
+.open-source-image {
+    width: 762px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.footer {
+    height: 100px;
+    background-color: #0B84FF;
+    display: flex;
+    flex-direction: row;
+    margin-top: 48px;
+    justify-content: space-between;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+    color: white;
+    gap: 8px;
+}
+
+.footer-title {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.footer-signature {
+    font-size: 16px;
+}
+
+.footer-linkedin {
+    height: 30px;
+    align-self: center;
+    margin-right: 50px;
 }
