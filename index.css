@@ -75,6 +75,10 @@ body {
     user-select: none;
 }
 
+.invisible {
+    display: none;
+}
+
 .feature-button {
     width: 150px;
     height: 150px;
