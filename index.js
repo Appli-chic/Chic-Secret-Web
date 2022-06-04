@@ -64,7 +64,7 @@ function changeFeatureVisibility(id, isVisible) {
     let feature = document.getElementById(id);
 
     if(isVisible) {
-        feature.className = "";
+        feature.className = "feature";
     } else{
         feature.className = "invisible";
     }
