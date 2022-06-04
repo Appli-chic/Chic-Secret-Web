@@ -29,6 +29,40 @@ body {
     font-weight: normal;
 }
 
+.download-button {
+    height: 40px;
+    width: fit-content;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: #0B84FF;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.download-button:hover {
+    background-color: rgba(11, 132, 255, 0.7);
+}
+
+.download-button:active {
+    background-color: rgba(11, 132, 255, 0.5);
+}
+
+.download-button-text {
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    margin-left: 8px;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 .app-bar {
     background-color: #001529;
     height: 600px;
@@ -49,17 +83,31 @@ body {
     display: flex;
     flex-direction: row;
     align-self: center;
+    margin-top: 28px;
 }
 
 .app-bar-content-start {
     display: flex;
     flex-direction: column;
     flex: 1;
-    margin-right: 50px;
     margin-left: 50px;
+    margin-right: 30px;
 }
 
 .app-bar-content-end {
     display: flex;
     flex: 1;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.app-bar-macos-img {
+    width: 700px;
+}
+
+.download-buttons-container {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
 }
