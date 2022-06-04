@@ -62,6 +62,19 @@ body {
     background-color: rgba(11, 132, 255, 0.5);
 }
 
+.button-text {
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    margin-left: 8px;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 .feature-button {
     width: 150px;
     height: 150px;
@@ -71,6 +84,19 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+}
+
+.feature-button:hover {
+    background-color: rgba(11, 132, 255, 0.3);
+}
+
+.feature-button:active {
+    background-color: #0B84FF;
+}
+
+.feature-button.active {
+    background-color: #0B84FF;
 }
 
 .feature-button-text {
@@ -87,22 +113,27 @@ body {
     user-select: none;
 }
 
+.feature-button-text.active {
+    color: white;
+}
+
+.feature-button:active .feature-button-text {
+    color: white;
+}
+
 .feature-button-image path {
     fill: #000000;
     fill-opacity: 70%;
 }
 
-.download-button-text {
-    color: white;
-    font-size: 14px;
-    font-weight: normal;
-    margin-left: 8px;
+.feature-button-image.active path {
+    fill: white;
+    fill-opacity: 100%;
+}
 
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+.feature-button:active .feature-button-image path {
+    fill: white;
+    fill-opacity: 100%;
 }
 
 .app-bar {
