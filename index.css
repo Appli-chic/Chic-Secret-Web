@@ -142,10 +142,10 @@ body {
 
 .app-bar {
     background-color: #001529;
-    height: 600px;
     display: flex;
     flex-direction: column;
 }
+
 
 .chic-secret-title {
     color: white;
@@ -168,7 +168,7 @@ body {
     display: flex;
     flex-direction: row;
     align-self: center;
-    margin-top: 28px;
+    margin-bottom: 16px;
 }
 
 .app-bar-content-start {
@@ -184,6 +184,7 @@ body {
     flex: 1;
     margin-left: 50px;
     margin-right: 50px;
+    align-self: center;
 }
 
 .app-bar-macos-img {
@@ -202,6 +203,24 @@ body {
     display: flex;
     flex-direction: row;
     gap: 32px;
+    justify-content: center;
+}
+
+@keyframes featureAnimation {
+    0% {
+        transform: translateY(-5%);
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.feature {
+    animation: 0.6s ease 0s 1 featureAnimation;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -227,24 +246,6 @@ body {
     margin-right: 100px;
     margin-top: 32px;
     align-self: center;
-}
-
-@keyframes featureAnimation {
-    0% {
-        transform: translateY(-5%);
-        opacity: 0.3;
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0%);
-    }
-}
-
-.feature {
-    animation: 0.6s ease 0s 1 featureAnimation;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .open-source-container {
@@ -300,4 +301,35 @@ body {
     height: 30px;
     align-self: center;
     margin-right: 50px;
+}
+
+@media screen and (max-width: 1350px) {
+    .app-bar-content {
+        width: auto;
+        flex-direction: column;
+    }
+
+    .content {
+        width: auto;
+    }
+
+    .app-bar-macos-img {
+        margin-top: 8px;
+        width: 700px;
+    }
+
+    .feature-image {
+        width: 700px;
+        align-self: center;
+    }
+
+    .open-source-container {
+        flex-direction: column;
+    }
+
+    .open-source-image {
+        margin-top: 16px;
+        width: 500px;
+        align-self: center;
+    }
 }
